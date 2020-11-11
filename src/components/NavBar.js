@@ -10,8 +10,6 @@ import instaIcon from './images/socialMedia/instagram.svg'
 
 function NavBar() {
     
-    var loggedIn = true;
-    
     return (
         <React.Fragment>
             <nav>
