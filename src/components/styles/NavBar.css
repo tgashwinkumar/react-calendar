@@ -9,11 +9,30 @@ nav{
 
 	position: relative;
 	top: 50%;
-	transform: translateY(-50%);
+	transform: translate(-90%,-50%);
 	background: honeydew;
 
-	box-shadow: 5px 5px 10px rgba(100,100,100,.5);
+	box-shadow: 5px 5px 10px rgba(100,100,100,.5);	
+	transition: all .3s ease;
+}
 
+nav:hover{
+	transform: translate(0, -50%);
+}
+
+.nav-menuTitle{
+	position: absolute;
+	top: 50%;
+	transform: rotate(90deg) translateY(0px);
+	opacity: 1;
+	color: white;
+	font-size: 150%;
+	transition: all .3s ease;
+}
+
+nav:hover + .nav-menuTitle{
+	opacity: 0;
+	transform: rotate(90deg) translateY(-70px);
 }
 
 .nav-sepLine{
