@@ -26,23 +26,11 @@ function CalendarMonthDropDown({monthNow}) {
     }
 
     return (
-        
         <div id="monthAccordion">
             <button onClick={setPrevMonth}>Prev</button>
             <div>{months[monthId].monthName}</div>
             <button onClick={setNextMonth}>Next</button>
         </div>
-
-        // <select id="monthDropDown">
-        //     {
-        //         months.map(month => {
-        //             if(month.monthId === monthNow){
-        //                 return <option selected value={month.monthId}>{month.monthName}</option>
-        //             }
-        //             return <option value={month.monthId}>{month.monthName}</option>
-        //         })
-        //     }
-        // </select>
     )
 }
 
