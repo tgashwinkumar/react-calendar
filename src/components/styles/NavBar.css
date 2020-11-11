@@ -1,0 +1,32 @@
+nav{
+	width: fit-content;
+
+	display: flex;
+	align-items: center;
+}
+
+.nav-brand img{
+	margin: 5px;
+	width: 50px;
+	object-fit: contain;
+}
+
+.nav-signIn{
+	margin: 5px;
+	padding: 5px 20px;
+	background: rgb(6, 173, 0);
+
+	text-decoration: none;
+	border-radius: 15px;
+}
+
+.nav-signUp{
+	margin: 5px;
+	padding: 5px 20px;
+	background:transparent;
+	border: 2px solid rgb(6, 173, 0);
+	color: rgb(6, 173, 0);
+
+	text-decoration: none;
+	border-radius: 15px;
+}
