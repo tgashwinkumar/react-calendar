@@ -17,19 +17,26 @@ function CalendarYearDropDown({yearNow}) {
             event.target.value = yearNow
         }
 
-        var val = parseInt(event.target.value) ;
+        var val = parseInt(event.target.value);
 
-        if(val >= years[years.length - 1] && val <= years[0]){
-            if(event.deltaY < 0){val += 1;}
-            else{val-=1}        
-        } 
+        if(event.deltaY < 0){
+            val += 1;
+            if(val > years[0]){
+                val = years[0];
+            }
+        }else{
+            val -= 1;
+            if(val < years[years.length - 1]){
+                val = years[years.length - 1];
+            }
+        }
         event.target.value = val;
         
     }
     
     useEffect(() => {
         const yearField = document.querySelector('#yearField');
-        yearField.addEventListener("wheel",scrollFunc)
+        yearField.addEventListener("wheel", scrollFunc);
     })
     
     return (
