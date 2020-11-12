@@ -1,4 +1,5 @@
 import React,{useEffect, useState} from 'react'
+import './styles/CalendarYearDropDown.css'
 import {getYears} from './utils/utils'
 
 function CalendarYearDropDown({yearNow}) {
@@ -7,7 +8,8 @@ function CalendarYearDropDown({yearNow}) {
     const [year, setYear] = useState(yearNow);
     
     const handleInput = (event) => {
-        setYear(event.target.value)
+        var val = parseInt(event.target.value)
+        setYear(val)
     }
     
     const scrollFunc = (event) => {
@@ -19,7 +21,7 @@ function CalendarYearDropDown({yearNow}) {
 
         var val = parseInt(event.target.value);
 
-        if(event.deltaY < 0){
+        if(event.deltaY <= 0){
             val += 1;
             if(val > years[0]){
                 val = years[0];
@@ -40,7 +42,7 @@ function CalendarYearDropDown({yearNow}) {
     })
     
     return (
-        <div>
+        <div className="yearField-container">
         <input type="text" value={year} id="yearField" onChange={event => handleInput(event)} />
         </div>
         )

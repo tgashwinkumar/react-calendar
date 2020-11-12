@@ -1,0 +1,12 @@
+.yearField-container input{
+    background: transparent;
+    border: none;
+    font-size: 150%;
+    width: 100px;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.yearField-container input:focus{
+    /* outline: none; */
+}

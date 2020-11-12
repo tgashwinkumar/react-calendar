@@ -1,0 +1,22 @@
+.weekHead-container{
+    display: flex;
+}
+
+.weekHead-data{
+    flex: 1;
+    text-align: center;
+    background: lightcyan;
+    padding: 10px;
+    margin: 0 2px;
+    font-weight: 700;
+}
+
+.weekHead-data:first-child{
+    background: coral;
+    margin: 0 2px 0 0;
+}
+
+.weekHead-data:last-child{
+    background: lightblue;
+    margin: 0 0 0 2px;
+}

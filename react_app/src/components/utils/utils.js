@@ -26,4 +26,48 @@ export const getYears = (yearNow) => {
     }
     return yearArray;
 }
+                    
+
+export const daysData = {
+                            2020:{
+                                November:[
+                                    { date: 1, day: 0, history: {}, birthday:{}, holiday: {}, },
+                                    { date: 2, day: 1, history: {}, birthday:{}, holiday: {}, },
+                                    { date: 3, day: 2, history: {}, birthday:{}, holiday: {}, },
+                                    { date: 4, day: 3, history: {}, birthday:{}, holiday: {}, },
+                                    { date: 5, day: 4, history: {}, birthday:{}, holiday: {}, },
+                                    { date: 6, day: 5, history: {}, birthday:{}, holiday: {}, },
+                                    { date: 7, day: 6, history: {}, birthday:{}, holiday: {}, },
+                                    { date: 8, day: 0, history: {}, birthday:{}, holiday: {}, },
+                                    { date: 9, day: 1, history: {}, birthday:{}, holiday: {}, },
+                                    { date: 10, day: 2, history: {}, birthday:{}, holiday: {}, },
+                                    { date: 11, day: 3, history: {}, birthday:{}, holiday: {}, },
+                                    { date: 12, day: 4, history: {}, birthday:{}, holiday: {}, },
+                                    { date: 13, day: 5, history: {}, birthday:{}, holiday: {}, },
+                                    { date: 14, day: 6, history: {}, birthday:{}, holiday: {}, },
+                                    { date: 15, day: 0, history: {}, birthday:{}, holiday: {}, },
+                                    { date: 16, day: 1, history: {}, birthday:{}, holiday: {}, },
+                                    { date: 17, day: 2, history: {}, birthday:{}, holiday: {}, },
+                                    { date: 18, day: 3, history: {}, birthday:{}, holiday: {}, },
+                                    { date: 19, day: 4, history: {}, birthday:{}, holiday: {}, },
+                                    { date: 20, day: 5, history: {}, birthday:{}, holiday: {}, },
+                                    { date: 21, day: 6, history: {}, birthday:{}, holiday: {}, },
+                                    { date: 22, day: 0, history: {}, birthday:{}, holiday: {}, },
+                                    { date: 23, day: 1, history: {}, birthday:{}, holiday: {}, },
+                                    { date: 24, day: 2, history: {}, birthday:{}, holiday: {}, },
+                                    { date: 25, day: 3, history: {}, birthday:{}, holiday: {}, },
+                                    { date: 26, day: 4, history: {}, birthday:{}, holiday: {}, },
+                                    { date: 27, day: 5, history: {}, birthday:{}, holiday: {}, },
+                                    { date: 28, day: 6, history: {}, birthday:{}, holiday: {}, },
+                                    { date: 29, day: 0, history: {}, birthday:{}, holiday: {}, },
+                                    { date: 30, day: 1, history: {}, birthday:{}, holiday: {}, },
+                                    { date: null, day: 2, history: {}, birthday:{}, holiday: {}, },
+                                    { date: null, day: 3, history: {}, birthday:{}, holiday: {}, },
+                                    { date: null, day: 4, history: {}, birthday:{}, holiday: {}, },
+                                    { date: null, day: 5, history: {}, birthday:{}, holiday: {}, },
+                                    { date: null, day: 6, history: {}, birthday:{}, holiday: {}, },
+                                ]
+                            }
+                        }
+
 

@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { months } from './utils/utils'
+import './styles/CalendarMonthDropDown.css'
 
 function CalendarMonthDropDown({monthNow}) {
 
@@ -27,9 +28,9 @@ function CalendarMonthDropDown({monthNow}) {
 
     return (
         <div id="monthAccordion">
-            <button onClick={setPrevMonth}>Prev</button>
-            <div>{months[monthId].monthName}</div>
-            <button onClick={setNextMonth}>Next</button>
+            <button className="monthAcc-prev" onClick={setPrevMonth}> &lt; </button>
+            <div className="monthAcc-data">{months[monthId].monthName}</div>
+            <button className="monthAcc-next" onClick={setNextMonth}> &gt; </button>
         </div>
     )
 }

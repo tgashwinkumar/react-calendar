@@ -1,0 +1,28 @@
+#monthAccordion{
+    position: relative;
+
+    display: flex;
+    margin: 0 10px;
+
+}
+
+.monthAcc-data{
+    line-height: 30px;
+    margin: 0 10px;
+    width:100px;
+    text-align: center;
+}
+
+#monthAccordion button{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(0,0,0,.5);
+    color: white;
+    font-weight: 600;
+}
+
+#monthAccordion button:focus{
+    outline: none;
+}

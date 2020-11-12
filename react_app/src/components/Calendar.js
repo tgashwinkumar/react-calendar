@@ -1,6 +1,6 @@
 import React from 'react'
-import CalendarData from './CalendarData'
 import CalendarMonthDropDown from './CalendarMonthDropDown';
+import CalendarWeekHead from './CalendarWeekHead';
 import CalendarYearDropDown from './CalendarYearDropDown';
 import './styles/Calendar.css';
 
@@ -11,19 +11,16 @@ function Calendar() {
 
     return (
         <div className="calendar-container">
-            <div className="calendar-header">
-                {yearNow}
-                <CalendarMonthDropDown  monthNow={monthNow}/>
+            <div className="calendar-header"></div>
+            <div className="calendar-options">
+                <CalendarMonthDropDown monthNow={monthNow}/>
                 <CalendarYearDropDown yearNow={yearNow}/>
             </div>
-            <div className="calendar-weekHead">
-            </div>
+            <CalendarWeekHead/>
             <div className="calendar-grid">
-                <CalendarData />
-            </div>
-            <div className="footer">
                 
             </div>
+            <div className="footer"></div>
         </div>
     )
 }
