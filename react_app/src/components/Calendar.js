@@ -1,8 +1,10 @@
 import React from 'react'
+import CalendarData from './CalendarData';
 import CalendarMonthDropDown from './CalendarMonthDropDown';
 import CalendarWeekHead from './CalendarWeekHead';
 import CalendarYearDropDown from './CalendarYearDropDown';
 import './styles/Calendar.css';
+import {sampleDays} from './utils/utils'
 
 function Calendar() {
 
@@ -18,9 +20,11 @@ function Calendar() {
             </div>
             <CalendarWeekHead/>
             <div className="calendar-grid">
-                
+                {
+                    sampleDays.map(dayProps => <CalendarData dayProps={dayProps}/>)
+                }
             </div>
-            <div className="footer"></div>
+            <div className="calendar-footer"></div>
         </div>
     )
 }

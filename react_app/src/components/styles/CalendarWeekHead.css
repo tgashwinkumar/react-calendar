@@ -1,22 +1,15 @@
 .weekHead-container{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    
+    background: #EDEDED;
+    -webkit-box-shadow: 4px 3px 11px 0px rgba(50, 50, 50, 0.55);
+    -moz-box-shadow:    4px 3px 11px 0px rgba(50, 50, 50, 0.55);
+    box-shadow:         4px 3px 11px 0px rgba(50, 50, 50, 0.55);
 }
 
 .weekHead-data{
-    flex: 1;
     text-align: center;
-    background: lightcyan;
     padding: 10px;
-    margin: 0 2px;
     font-weight: 700;
-}
-
-.weekHead-data:first-child{
-    background: coral;
-    margin: 0 2px 0 0;
-}
-
-.weekHead-data:last-child{
-    background: lightblue;
-    margin: 0 0 0 2px;
 }

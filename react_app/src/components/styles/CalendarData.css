@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+/* :root{
+    --grad-0: #FC6A6A;
+    --grad-1: #E47882;
+    --grad-2: #CB869B;
+    --grad-3: #B394B3;
+    --grad-4: #9BA1CB;
+    --grad-5: #82AFE4;
+    --grad-6: #6ABDFC;
+} */
+
+:root{
+    --grad-0: #FF8888;
+    --grad-1: #FC9999;
+    --grad-2: #F9AAAA;
+    --grad-3: #F6BBBB;
+    --grad-4: #F3CBCB;
+    --grad-5: #F0DCDC;
+    --grad-6: #EDEDED;
+}
+
+.calData-container{
+    height: 1fr;
+    background: lightcyan;
+    font-family: 'Shadows Into Light', cursive;
+
+    padding: 5px;
+
+    display: flex;
+}
+
+.calData-date{
+    flex: 1;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.calData-options{
+    display: flex;
+    flex-direction: column;
+}
+
+.calData-options img{
+    margin: 5px 2px;
+    width: 15px;
+    object-fit: contain;
+}
+
+.day-0{
+    background: var(--grad-0);
+}
+.day-1{
+    background: var(--grad-1);
+}
+.day-2{
+    background: var(--grad-2);
+}
+.day-3{
+    background: var(--grad-3);
+}
+.day-4{
+    background: var(--grad-4);
+}
+.day-5{
+    background: var(--grad-5);
+}
+.day-6{
+    background: var(--grad-6);
+}
+
+.week-1{
+    filter: brightness(100%);
+}
+.week-2{
+    filter: brightness(90%);
+}
+.week-3{
+    filter: brightness(80%);
+}
+.week-4{
+    filter: brightness(70%);
+}
+.week-5{
+    filter: brightness(60%);
+}

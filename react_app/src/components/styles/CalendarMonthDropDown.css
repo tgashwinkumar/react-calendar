@@ -9,8 +9,10 @@
 .monthAcc-data{
     line-height: 30px;
     margin: 0 10px;
-    width:100px;
+    width:150px;
     text-align: center;
+    
+    font-size: 150%;
 }
 
 #monthAccordion button{

@@ -1,6 +1,8 @@
+          
+
 .calendar-container{
     width: 50vw;
-    height: 80vh;
+    height: 90vh;
 
     position: absolute;
     left: 100px;
@@ -8,12 +10,27 @@
     transform: translateY(-50%);
 
     border-radius: 30px ;
+    box-shadow: 5px 5px 15px rgba(100,100,100,.7);                                          
+
+    display: flex;
+    flex-direction: column;
 }
 
 .calendar-header{
     border-radius: 30px 30px 0 0;
     height: 30px;
     background: honeydew;
+}
+
+.calendar-footer{
+    border-radius: 0 0 30px 30px;
+    height: 30px;
+    background: honeydew;
+    margin: 0;
+
+    -webkit-box-shadow: 2px -5px 11px 0px rgba(50, 50, 50, 0.55);
+    -moz-box-shadow:    2px -5px 11px 0px rgba(50, 50, 50, 0.55);
+    box-shadow:         2px -5px 11px 0px rgba(50, 50, 50, 0.55);
 }
 
 .calendar-options{
@@ -32,4 +49,8 @@
         ". . . . . . ."
         ". . . . . . ."
         ". . . . . . .";
+    flex: 1;
+
+    position: relative;
+    z-index: -100;
 }
