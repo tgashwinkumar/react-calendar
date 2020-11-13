@@ -23,6 +23,7 @@
     background: rgba(0,0,0,.5);
     color: white;
     font-weight: 600;
+    cursor: pointer;
 }
 
 #monthAccordion button:focus{

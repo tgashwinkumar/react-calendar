@@ -45,6 +45,7 @@
     margin: 5px 2px;
     width: 15px;
     object-fit: contain;
+    cursor: pointer;
 }
 
 .day-0{
