@@ -5,6 +5,7 @@
     width: 100px;
     text-align: center;
     margin: 0 10px;
+    color: #bbe1fa;
 }
 
 .yearField-container input:focus{

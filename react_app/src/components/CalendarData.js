@@ -1,8 +1,7 @@
 import React from 'react'
 import './styles/CalendarData.css'
 import {isExist} from './utils/utils'
-import cakeIcon from './images/misc/cake.svg'
-import suitcaseIcon from './images/misc/suitcases.svg'
+import {birthdayIcon, eventsIcon} from './utils/icons'
 
 function CalendarData({dayProps}) {
 
@@ -17,8 +16,8 @@ function CalendarData({dayProps}) {
         <div className={calDataContain}>
             <div className="calData-date">{date}</div>
             <div className="calData-options">
-                {(date) && (!isBirthday) && <img alt="isBirthday?" src={cakeIcon} />}
-                {(date) && (!isHoliday)  && <img alt="isHoliday?" src={suitcaseIcon} />}
+                {(date) && (!isBirthday) && <img alt="isBirthday?" src={birthdayIcon} />}
+                {(date) && (!isHoliday)  && <img alt="isHoliday?" src={eventsIcon} />}
             </div>
         </div>
         )
