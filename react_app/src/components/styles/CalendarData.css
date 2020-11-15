@@ -11,13 +11,13 @@
 } */
 
 :root{
-    --grad-0: #FF8888;
-    --grad-1: #FC9999;
-    --grad-2: #F9AAAA;
-    --grad-3: #F6BBBB;
-    --grad-4: #F3CBCB;
-    --grad-5: #F0DCDC;
-    --grad-6: #EDEDED;
+    --grad-0: #3282B8;
+    --grad-1: #2C79AD;
+    --grad-2: #2670A2;
+    --grad-3: #216797;
+    --grad-4: #1B5E8B;
+    --grad-5: #155580;
+    --grad-6: #0F4C75;
 }
 
 .calData-container{
@@ -34,6 +34,7 @@
     flex: 1;
     font-size: 30px;
     font-weight: 500;
+    color: snow;
 }
 
 .calData-options{
@@ -45,6 +46,7 @@
     margin: 5px 2px;
     width: 15px;
     object-fit: contain;
+    filter: invert(100%);
     cursor: pointer;
 }
 

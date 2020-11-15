@@ -3,6 +3,8 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
 import Calendar from './components/Calendar';
 import NavBar from './components/NavBar';
+import ToolBar from './components/ToolBar'
+
 
 function App() {
   return (
@@ -10,6 +12,7 @@ function App() {
       <Router>
         <NavBar/>
         <Calendar/>
+        <ToolBar/>
       </Router>
     </div>
   );
