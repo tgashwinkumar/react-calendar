@@ -23,6 +23,7 @@
     background: #1b262c;
     color: #bbe1fa;
     font-weight: 600;
+    cursor: pointer;
 }
 
 #monthAccordion button:focus{

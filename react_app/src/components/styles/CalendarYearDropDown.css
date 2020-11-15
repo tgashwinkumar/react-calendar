@@ -6,6 +6,7 @@
     text-align: center;
     margin: 0 10px;
     color: #bbe1fa;
+    cursor: all-scroll;
 }
 
 .yearField-container input:focus{

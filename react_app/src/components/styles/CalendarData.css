@@ -47,6 +47,7 @@
     width: 15px;
     object-fit: contain;
     filter: invert(100%);
+    cursor: pointer;
 }
 
 .day-0{
