@@ -1,0 +1,11 @@
+.display-container{
+    width: 38vw;
+    height: 50vh;
+    border: 2px solid slategray;
+    background: #363d44;
+    padding: 10px;
+
+    position: absolute;
+    right: 60px;
+    bottom: 30px;
+}

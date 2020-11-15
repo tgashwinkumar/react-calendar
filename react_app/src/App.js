@@ -4,7 +4,8 @@ import './App.css';
 import Calendar from './components/Calendar';
 import NavBar from './components/NavBar';
 import ToolBar from './components/ToolBar'
-
+import Display from './components/Display'
+import bwcBanner from './components/images/misc/bwcBanner.png'
 
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
         <NavBar/>
         <Calendar/>
         <ToolBar/>
+        <img src={bwcBanner} alt="BrosWhoCode react-calendar" className="bwcBanner"/>
+        <Display/>
       </Router>
     </div>
   );
