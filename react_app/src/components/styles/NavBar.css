@@ -11,10 +11,12 @@ nav{
 	position: absolute;
 	top: 50%;
 	transform: translate(-90%,-50%);
-	background: honeydew;
+	background:#34414e;
 
-	box-shadow: 5px 5px 10px rgba(100,100,100,.5);	
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);		
 	transition: all .3s ease;
+
+	z-index: 4;
 }
 
 nav:hover{
@@ -26,7 +28,7 @@ nav:hover{
 	top: 50%;
 	transform: rotate(90deg) translateY(0px);
 	opacity: 1;
-	color: white;
+	color: #0f4c75;
 	font-size: 150%;
 	transition: all .3s ease;
 }
@@ -38,7 +40,7 @@ nav:hover + .nav-menuTitle{
 
 .nav-sepLine{
 	height: 1px;
-	background: darkgray;
+	background: rgba(0, 0, 0, 0.5);	
 	width: 90%;
 	margin: 10px 0;
 }
@@ -51,14 +53,14 @@ nav:hover + .nav-menuTitle{
 
 .nav-link img{
 	width: 100%;
-	box-shadow: 3px 3px 5px rgba(100,100,100,.7);
+	box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);	
 	transform: translateY(0);
 	transition: all .5s ease;
 }
 
 
 .nav-link:hover img{
-	box-shadow: 7px 7px 15px rgba(100,100,100,.5);
+	box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.5);	
 	transform: translateY(-5px);
 }
 
