@@ -6,7 +6,7 @@ import {eventsIcon, timeZoneIcon, weatherIcon, toDoIcon, todayInHistoryIcon, bir
 function ToolBar() {
     
     return (
-        <React.Fragment>
+        <>
             <div className="tools">
                 <Link to="/" className="tools-link tools-timezone"><img alt="TimeZone" src={timeZoneIcon}/></Link>
                 <Link to="/" className="tools-link tools-weather"><img alt="Weather" src={weatherIcon}/></Link>
@@ -16,7 +16,7 @@ function ToolBar() {
                 <Link to="/" className="tools-link tools-todayinhistory"><img alt="Today in History" src={todayInHistoryIcon}/></Link>
             </div>
             <div className="tools-menuTitle">Tools</div>
-        </React.Fragment>
+        </>
         )
     }
     
