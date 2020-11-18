@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import './styles/Display.css'
 import './styles/timezone.css'
+import './styles/todolist.css'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 
 function Display() {
@@ -24,8 +25,16 @@ function Display() {
                             </select>
                         </div>
                     </Route>
-                    <Route path='/weather'>
-                        fjhg
+                    <Route path='/todolist'>
+                        <div id = "container">
+                            <h1>To Do List<i class="fa fa-plus"></i></h1>
+                            <input type="text" placeholder="Add New Todo"></input>
+                            <ul>
+                                <li><span><i class="fa fa-trash"></i></span> Go To Potions Class</li>
+                                <li><span><i class="fa fa-trash"></i></span> Buy New Robes</li>
+                                <li><span><i class="fa fa-trash"></i></span> Visit Hagrid</li>
+                            </ul>
+                        </div>
                     </Route>
                 </Switch>
             </Router>
