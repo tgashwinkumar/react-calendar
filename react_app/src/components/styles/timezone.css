@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+.Timezone{
+    font-size: 30px;
+    font-family: 'Architects Daughter', cursive;
+    color: aliceblue;
+}
+.time{
+    font-size: 45px;
+    padding-left: 120px;
+    margin-bottom: 15px;
+    color: black;
+    background-color: rgb(228, 217, 217);
+    border-radius: 15px;
+    
+}
+.Date{
+    font-size: 20px;
+    margin-left: 20px;
+    margin-bottom: 7px;
+}
+.Day{
+    font-size: 20px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+.CurrTimezone{
+    margin-left: 65px;
+    margin-bottom: 15px;
+}
+.DropTimezone{
+    margin-left: 180px;
+    margin-bottom: 15px; 
+    width: 135px; 
+    height: 30px;
+}
