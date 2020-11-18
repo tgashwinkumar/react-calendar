@@ -2,17 +2,19 @@
     position: relative;
 
     display: flex;
+    align-content: center;
+    height: fit-content;
     margin: 0 10px;
 
 }
 
 .monthAcc-data{
-    line-height: 30px;
+    line-height: 25px;
     margin: 0 10px;
     width:150px;
     text-align: center;
     
-    font-size: 150%;
+    font-size: 25px;
 }
 
 #monthAccordion button{

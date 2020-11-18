@@ -1,7 +1,7 @@
 .weekHead-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    
+    height: fit-content;
     background: #0f4c75;
     color:#3282b8;
     -webkit-box-shadow: 4px 3px 11px 0px rgba(50, 50, 50, 0.55);

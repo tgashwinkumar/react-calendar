@@ -22,7 +22,7 @@ function NavBar() {
                 <Link to="/" className="nav-link nav-social-insta"><img src={instaIcon} alt="Follow us on Instagram"/></Link>
                 <Link to="/" className="nav-link nav-social-github"><img src={githubIcon} alt="Join us on Github"/></Link>
             </nav>
-            <div className="nav-menuTitle">Menu</div>
+            <div className="nav-menuTitle">Contact Us</div>
         </React.Fragment>
         )
     }
