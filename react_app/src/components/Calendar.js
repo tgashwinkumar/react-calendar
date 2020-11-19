@@ -21,7 +21,7 @@ function Calendar() {
             <CalendarWeekHead/>
             <div className="calendar-grid">
                 {
-                    sampleDays.map(dayProps => <CalendarData dayProps={dayProps}/>)
+                    sampleDays.map(dayProps => <CalendarData dayProps={dayProps} key={sampleDays.indexOf(dayProps)}/>)
                 }
             </div>
             <div className="calendar-footer"></div>

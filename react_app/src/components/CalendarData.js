@@ -1,16 +1,20 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './styles/CalendarData.css'
 import {isExist} from './utils/utils'
 import {birthdayIcon, eventsIcon} from './utils/icons'
 
 function CalendarData({dayProps}) {
 
-    const {day,date,week,birthday,holiday} = dayProps;
+    const {id,day,date,week,birthday,holiday} = dayProps;
+
+    const [active, setActive] = useState(null);
 
     const isBirthday = isExist(birthday);
     const isHoliday = isExist(holiday);
 
-    const calDataContain = `calData-container day day-${day} week-${week}`
+    const isDay = date ? "day" : ""
+
+    const calDataContain = `calData-container ${isDay} day-${day} week-${week} ${active === id ? 'selected' : ''}`
     
     return (
         <div className={calDataContain}>

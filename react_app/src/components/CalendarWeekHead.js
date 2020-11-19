@@ -6,7 +6,7 @@ function CalendarWeekHead() {
     return (
         <div className="weekHead-container">
             {
-                days.map(day => <p className="weekHead-data">{day.dayName.substring(0,3).toUpperCase()}</p> )
+                days.map(day => <p className="weekHead-data" key={day.dayId}>{day.dayName.substring(0,3).toUpperCase()}</p> )
             }
         </div>
     )
