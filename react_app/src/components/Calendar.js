@@ -9,29 +9,31 @@ import {DateContext} from '../App'
 
 export const DateSelectedContext = React.createContext();
 
-const getTodayDateId = (dateArray) => {
-    const dateNow = new Date().getDate();
-    for(var dateProps in dateArray){
-        if(dateProps?.date === dateNow){
-            return dateProps?.id;
-        }
-    }
-}
+// const getTodayDateId = (dateArray) => {
+//     const dateNow = new Date().getDate();
+//     for(var dateProps in dateArray){
+//         if(dateProps?.date === dateNow){
+//             return dateProps?.id;
+//         }
+//     }
+// }
 
 function Calendar() {
 
     const [monthOpt, ] = useContext(DateContext).monthOpt;
-    const [yearOpt, ] = useContext(DateContext).yearOpt;
+
+    const dateNow = new Date().getDate();
+    const yearNow = new Date().getFullYear();
 
     return (
         <div className="calendar-container">
             <div className="calendar-header"></div>
             <div className="calendar-options">
                 <CalendarMonthDropDown monthNow={monthOpt}/>
-                <CalendarYearDropDown yearNow={yearOpt}/>
+                <CalendarYearDropDown yearNow={yearNow}/>
             </div>
             <CalendarWeekHead/>
-            <DateSelectedContext.Provider value={useState(null)}>
+            <DateSelectedContext.Provider value={useState(dateNow)}>
             <div className="calendar-grid">
                 {
                     sampleDays.map(dayProps => <CalendarData dayProps={dayProps} key={sampleDays.indexOf(dayProps)}/>)

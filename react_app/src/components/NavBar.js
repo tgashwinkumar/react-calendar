@@ -3,11 +3,8 @@ import {Link} from 'react-router-dom';
 import './styles/NavBar.css';
 import logo from './images/bwcLogo.png';
 import defaultProfile from './images/avatars/ava6.svg'
-import facebookIcon from './images/socialMedia/facebook.svg'
-import whatsappIcon from './images/socialMedia/whatsapp.svg'
-import githubIcon from './images/socialMedia/github.svg'
-import instaIcon from './images/socialMedia/instagram.svg'
 
+import {instaIcon, facebookIcon, githubIcon, whatsappIcon} from './utils/icons'
 
 function NavBar() {
     

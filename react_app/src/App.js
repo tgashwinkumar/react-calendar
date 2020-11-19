@@ -19,7 +19,7 @@ function App() {
     <div className="App">
       <Router>
         <Switch>
-          <Route path="/">
+          <Route path={["/home"]}>
             <DateContext.Provider 
               value={{
                 dateOpt: useState(dateNow),
@@ -33,8 +33,8 @@ function App() {
               <Result/>
             </DateContext.Provider>
           </Route>
-          <Route path="/profile">
-              jgjgj
+          <Route exact path='/profile'>
+              <NavBar/>
           </Route>
           <Route path="/login">
             hgjhjghj

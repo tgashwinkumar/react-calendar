@@ -1,10 +1,14 @@
-import React, { useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { months } from './utils/utils'
 import './styles/CalendarMonthDropDown.css'
+import { DateContext } from '../App';
 
 function CalendarMonthDropDown({monthNow}) {
 
     const [monthId, setMonthId] = useState(monthNow);
+
+    const {monthOpt} = useContext(DateContext);
+    const [,setMonthOptVal] = monthOpt;
 
     const setPrevMonth = () => {
         setMonthId(currentMonth => {
@@ -25,6 +29,10 @@ function CalendarMonthDropDown({monthNow}) {
             }
         })
     }
+
+    useEffect(() => {
+        setMonthOptVal(monthId);
+    },[setMonthOptVal, monthId]);
 
     return (
         <div id="monthAccordion">

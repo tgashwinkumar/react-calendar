@@ -1,15 +1,19 @@
-import React,{useEffect, useState} from 'react'
+import React,{useContext, useEffect, useState} from 'react'
 import './styles/CalendarYearDropDown.css'
 import {getYears} from './utils/utils'
+import {DateContext} from '../App'
 
 function CalendarYearDropDown({yearNow}) {
     const years = getYears(yearNow);
+
+    const {yearOpt} = useContext(DateContext)
+    const [,setYearOptVal] = yearOpt;
     
     const [year, setYear] = useState(yearNow);
     
     const handleInput = (event) => {
         var val = parseInt(event.target.value)
-        setYear(val)
+        setYear(val);
     }
     
     const scrollFunc = (event) => {
@@ -40,6 +44,10 @@ function CalendarYearDropDown({yearNow}) {
         const yearField = document.querySelector('#yearField');
         yearField.addEventListener("wheel", scrollFunc);
     })
+
+    useEffect(()=>{
+        setYearOptVal(year);
+    },[year, setYearOptVal])
     
     return (
         <div className="yearField-container">
