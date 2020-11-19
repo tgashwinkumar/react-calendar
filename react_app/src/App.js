@@ -1,14 +1,15 @@
 import React, {useState} from 'react'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import './App.css';
 import Calendar from './components/Calendar';
 import NavBar from './components/NavBar';
 import Result from './components/Result'
 import bwcBanner from './components/images/misc/bwcBanner.png'
 
+export const DateContext = React.createContext();
+
 function App() {
 
-  const DateContext = React.createContext();
   const yearNow = new Date().getFullYear();
   const dateNow = new Date().getDate();
   const monthNow = new Date().getMonth();
@@ -33,13 +34,13 @@ function App() {
             </DateContext.Provider>
           </Route>
           <Route path="/profile">
-
+              jgjgj
           </Route>
           <Route path="/login">
-
+            hgjhjghj
           </Route>
           <Route path="/signup">
-
+            hfdgfg
           </Route>
         </Switch>
       </Router> 
