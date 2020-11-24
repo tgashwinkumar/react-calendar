@@ -19,7 +19,16 @@ function App() {
     <div className="App">
       <Router>
         <Switch>
-          <Route path={["/home"]}>
+          <Route exact path='/profile'>
+              <NavBar/>
+          </Route>
+          <Route path="/login">
+            hgjhjghj
+          </Route>
+          <Route path="/signup">
+            hfdgfg
+          </Route>
+          <Route path="/">
             <DateContext.Provider 
               value={{
                 dateOpt: useState(dateNow),
@@ -32,15 +41,6 @@ function App() {
               <img src={bwcBanner} alt="BrosWhoCode react-calendar" className="bwcBanner"/>
               <Result/>
             </DateContext.Provider>
-          </Route>
-          <Route exact path='/profile'>
-              <NavBar/>
-          </Route>
-          <Route path="/login">
-            hgjhjghj
-          </Route>
-          <Route path="/signup">
-            hfdgfg
           </Route>
         </Switch>
       </Router> 

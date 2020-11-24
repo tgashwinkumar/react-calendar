@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react'
+import React, { useContext} from 'react'
 import './styles/Display.css'
 import './styles/timezone.css'
 import './styles/todolist.css'
@@ -17,7 +17,7 @@ function Display() {
         <div className="display-container">
             <Router>
                 <Switch>
-                    <Route path='/home/timezone'>
+                    <Route path='/timezone'>
                         <div class = "Timezone">
                             <div class="Date">NOV 18 , Wednesday</div>
                             <div class="time">09 : 41 : 25</div>
@@ -28,7 +28,7 @@ function Display() {
                             </select>
                         </div>
                     </Route>
-                    <Route path='/home/todolist'>
+                    <Route path='/todolist'>
                         <div id = "container">
                             <h1>To Do List<i class="fa fa-plus"></i></h1>
                             <input type="text" placeholder="Add New Todo"></input>
@@ -39,7 +39,7 @@ function Display() {
                             </ul>
                         </div>
                     </Route>
-                    <Route path="/home/weather">
+                    <Route path="/weather">
                         <p>{dateOptVal}-{monthOptVal + 1}-{yearOptVal}, {dayOptVal}</p>
                     </Route>
                 </Switch>
