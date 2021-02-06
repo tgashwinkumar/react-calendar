@@ -9,15 +9,6 @@ import {DateContext} from '../App'
 
 export const DateSelectedContext = React.createContext();
 
-// const getTodayDateId = (dateArray) => {
-//     const dateNow = new Date().getDate();
-//     for(var dateProps in dateArray){
-//         if(dateProps?.date === dateNow){
-//             return dateProps?.id;
-//         }
-//     }
-// }
-
 function Calendar() {
 
     const [monthOpt, ] = useContext(DateContext).monthOpt;

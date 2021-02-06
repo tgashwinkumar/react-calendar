@@ -25,8 +25,8 @@ function CalendarData({dayProps}) {
         <div className={calDataContain} onClick={() => {setActiveDate(date); setDateOptVal(date); setDayOptVal(day)}}>
             <div className="calData-date">{date}</div>
             <div className="calData-options">
-                {(date) && (isBirthday) && <img alt="isBirthday?" src={birthdayIcon} />}
-                {(date) && (isHoliday)  && <img alt="isHoliday?" src={eventsIcon} />}
+                {(date) && (!isBirthday) && <img alt="isBirthday?" src={birthdayIcon} />}
+                {(date) && (!isHoliday)  && <img alt="isHoliday?" src={eventsIcon} />}
             </div>
         </div>
         )

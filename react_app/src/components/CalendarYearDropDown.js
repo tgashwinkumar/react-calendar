@@ -51,7 +51,7 @@ function CalendarYearDropDown({yearNow}) {
     
     return (
         <div className="yearField-container">
-        <input type="text" value={year} id="yearField" onChange={event => handleInput(event)} />
+            <input type="text" value={year} id="yearField" onChange={event => handleInput(event)} />
         </div>
         )
     }

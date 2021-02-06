@@ -36,6 +36,25 @@ export const getYears = (yearNow) => {
     return yearArray;
 }
 
+export const getDayName = (dayId) => {
+    let resultDay;
+    days.forEach(day => {
+        if(day.dayId === dayId){
+            resultDay = day.dayName;
+        }
+    })
+    return resultDay;
+}
+
+export const getMonthName = (monthId) => {
+    let resultMonth;
+    months.forEach(month => {
+        if(month.monthId === monthId){
+            resultMonth = month.monthName;
+        }
+    })
+    return resultMonth
+}
 
 export const sampleDays = [
     {id:  1, date: 1,    day: 0, week:1, history: {}, birthday:{}, holiday: {}, },
